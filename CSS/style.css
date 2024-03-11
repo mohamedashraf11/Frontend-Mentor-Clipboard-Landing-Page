@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --button-one-color: hsl(171, 66%, 44%);
+  --button-two-color: hsl(233, 100%, 69%);
+  --heading-color: hsl(210, 10%, 33%);
+  --paragraph-color: hsl(201, 11%, 66%);
+  --section-padding-top: 100px;
+  --section-padding-bottom: 100px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* START OF LANDING */
+.landing {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+  background: url("../Images/bg-header-mobile.png") no-repeat;
+  background-size: contain;
+}
+
+.landing .container {
+  text-align: center;
+}
+
+.landing .container .logo {
+  width: 100px;
+}
+
+.landing .container .intro-text > h1 {
+  color: var(--heading-color);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 50px auto 25px;
+}
+
+.landing .container .intro-text > p {
+  color: var(--paragraph-color);
+  max-width: 550px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.download {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.download > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 300px;
+  flex-basis: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+a.one {
+  background-color: var(--button-one-color);
+  border-bottom: 3px solid green;
+  box-shadow: 0 10px 20px rgba(0, 128, 0, 0.3);
+}
+
+a.two {
+  background-color: var(--button-two-color);
+  border-bottom: 3px solid blue;
+  box-shadow: 0 10px 20px rgba(0, 0, 255, 0.3);
+}
+
+/* END OF LANDING */
+
+/* START OF FEATURES */
+.features {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.content {
+  text-align: center;
+}
+
+.content > h2 {
+  color: var(--heading-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.content > p {
+  color: var(--paragraph-color);
+  line-height: 1.7;
+  margin: 20px auto;
+  max-width: 700px;
+  font-weight: 400;
+}
+
+.features .features-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 70px;
+  gap: 40px;
+}
+
+
+.features-holder > div {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.features-holder > div > h3 {
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.features-holder > div > p {
+  line-height: 1.7;
+  color: var(--paragraph-color);
+}
+
+.features-content .image > img {
+  max-width: 100%;
+}
+/* END OF FEATURES */
+
+/* START OF SPEACIAL FEATURE */
+
+.special-feature {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.special-feature .container .special-feature-content {
+  margin-top: 50px;
+}
+
+.special-feature .image {
+  text-align: center;
+}
+
+.special-feature .container .image > img {
+  max-width: 100%;
+}
+/* END OF SPEACIAL FEATURE */
+
+/* START OF USE CASES */
+.use-cases {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.use-cases-content {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 50px;
+}
+
+.use-cases-content .card {
+  text-align: center;
+}
+
+.use-cases-content .card .info {
+  margin-top: 40px;
+}
+
+.use-cases-content .card .info > h3 {
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.use-cases-content .card .info > p {
+  line-height: 1.7;
+  color: var(--paragraph-color);
+}
+/* END OF USE CASES */
+
+/* START OF COMPANY */
+.company {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.company .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
+
+.company .logos > div {
+  text-align: center;
+}
+
+.company .logos > div > img {
+  max-width: 100%;
+}
+/* END OF COMPANY */
+
+/* START OF GET APP */
+.get-app {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+/* END OF GET APP */
+
+/* START OF FOOTER */
+footer {
+  background-color: rgb(159 171 178 / 15%);
+  padding: 40px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+footer .container > img {
+  width: 55px;
+}
+
+footer .container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+footer .container ul li {
+  text-align: center;
+}
+
+footer .container ul li a {
+  text-decoration: none;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+footer .container .social {
+  display: flex;
+  gap: 30px;
+}
+
+footer .social a {
+  text-decoration: none;
+  font-size: 28px;
+  color: var(--heading-color);
+}
+
+footer ul li a:hover, footer .social a:hover {
+    color: var(--button-one-color);
+}
+
+/* END OF FOOTER */
+
+/* START OF STYLING MEDIA */
+
+/* Changing Background Between Devices */
+@media (min-width: 768px) {
+  .landing {
+    background: url("../Images/bg-header-desktop.png") no-repeat;
+    background-size: contain;
+  }
+
+  .features .features-content > div {
+    flex: 1;
+  }
+
+  .features .features-content {
+    position: relative;
+    left: -115px;
+  }
+
+  .features .features-content .features-holder {
+    max-width: 385px;
+  }
+
+  .features .features-content .features-holder > .feature {
+    text-align: left;
+  }
+
+  footer .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer .container ul li {
+    width: calc(100% / 3);
+    text-align: left;
+  }
+}
+/* END OF STYLING MEDIA */
